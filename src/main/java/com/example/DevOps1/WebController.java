@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebController extends SpringBootServletInitializer {
 
     @Override
-    @RequestMapping("/")
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(DevOps1Application.class);
     }
