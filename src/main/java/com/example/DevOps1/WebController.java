@@ -1,14 +1,15 @@
 package com.example.DevOps1;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WebController {
+public class WebController extends SpringBootServletInitializer {
 
-    @RequestMapping("/")
-    public String index(){
-        return "Greetings from Spring Boot!";
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(DevOps1Application.class);
     }
 }
