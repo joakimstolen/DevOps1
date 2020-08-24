@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>DevOps1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>DevOps1</name>
 	<description>DevOps arbeidsmappe 1</description>
 
